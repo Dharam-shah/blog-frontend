@@ -1,9 +1,10 @@
 <template>
   <div>{{ name }}</div>
+  <div v-text="channel"></div>
+  <div v-html="htmlData"></div>
 </template>
 
 <script>
-
 
 export default {
   name: 'App',
@@ -13,7 +14,9 @@ export default {
 
   data() {
     return {
-      name: 'Hello Vue'
+      name: 'Hello Vue',
+      channel: 'codevolution',
+      htmlData: '<p>Html data</p>'
     }
   }
 }
