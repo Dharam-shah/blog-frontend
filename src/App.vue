@@ -1,22 +1,18 @@
 <template>
-  <div>{{ name }}</div>
-  <div v-text="channel"></div>
-  <div v-html="htmlData"></div>
+  <vee-validate-form />
 </template>
 
 <script>
-
+import VeeValidateForm from './components/VueValidateForm'
 export default {
   name: 'App',
   components: {
-
+    VeeValidateForm
   },
 
   data() {
     return {
-      name: 'Hello Vue',
-      channel: 'codevolution',
-      htmlData: '<p>Html data</p>'
+
     }
   }
 }
