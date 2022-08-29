@@ -1,6 +1,6 @@
 <template>
   <Form>
-    <Field name="field" type="text" :rules="isRequired" as="input"/>
+    <Field name="field" type="text" :rules="isRequired"/>
     <ErrorMessage name="field" />
     <Field name="select" as="select" :rules="isRequired">
         <option>Coffee</option>
